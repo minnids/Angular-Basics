@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+<p>{{description}}</p>
+
+<p>{{title}}</p>
+<ng-template [ngTemplateOutlet]="templateHeader"></ng-template>
+
+
+<ng-content select="[description]"></ng-content>
+<ng-content select="[header]"></ng-content>

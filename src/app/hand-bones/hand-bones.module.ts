@@ -5,8 +5,6 @@ import { ScaphoidComponent } from './scaphoid/scaphoid.component';
 import { LynateComponent } from './lynate/lynate.component';
 import { PysyformComponent } from './pysyform/pysyform.component';
 
-
-
 @NgModule({
   declarations: [
     HandBonesComponent,
