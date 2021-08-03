@@ -1,5 +1,21 @@
+<router-outlet></router-outlet>
 <h1>Hello World</h1>
+<a routerLink="/news" routerLinkActive="active">News</a>
+<a routerLink="/news/sports" routerLinkActive="active">Sports</a>
 <p>{{title}}</p>
 <app-hand-bones></app-hand-bones>
 <website-blog></website-blog>
-<router-outlet></router-outlet>
+<custom-button (getData)="handleGetData($event)" (handleClickData)="handleClickData($event)">
+  Header
+</custom-button>
+<custom-blog title="Custom blog" description="Custom blog description" [templateHeader]="header">
+</custom-blog>
+
+<custom-blog title="Custom blog 2" [description]="title" [templateHeader]="header">
+</custom-blog>
+
+<ng-template #header>
+  <h1>Template header</h1>
+  <img src="https://miro.medium.com/max/3492/1*fKb9TdxSYjVzWindUWaGUg.png" width="200" alt="">
+</ng-template>
+

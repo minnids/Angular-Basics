@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = "From the component";
-
+  handleGetData(e:any){
+    console.log(e);
+  }
+  handleClickData(e:any){
+    console.log(e);
+  }
 }
