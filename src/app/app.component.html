@@ -5,28 +5,28 @@
 <a routerLink="/signup" routerLinkActive="active">Signup</a>
 <a routerLink="/signup-react" routerLinkActive="active">signup-react</a>
 </div>
+<router-outlet></router-outlet>
 <!-- <p>{{title}}</p>
 <app-hand-bones></app-hand-bones>
 <website-blog></website-blog>
 
-<!-- Passing normal values with ng-content -->
+Passing normal values with ng-content
 <custom-button >
   Header
 </custom-button>
 
-<!-- Passing the template to the input decorator -->
+Passing the template to the input decorator
 <custom-blog title="Custom blog 2" [description]="title" [templateHeader]="header">
 </custom-blog>
 
 <ng-template #header>
   <h1>Template header</h1>
   <img src="https://miro.medium.com/max/3492/1*fKb9TdxSYjVzWindUWaGUg.png" width="200" alt="">
-</ng-template> -->
-
-<router-outlet></router-outlet>
+</ng-template>
 
 
-<!-- With slot projection with ng-content -->
+
+With slot projection with ng-content
 <custom-blog title="Custom blog" description="Custom blog description" [templateHeader]="header">
   <h1 header>Heading</h1>
   <p description>THe blog description</p>
@@ -34,5 +34,5 @@
 <custom-blog >
   <h1 header>Heading</h1>
   <p description>THe blog description</p>
-</custom-blog>
+</custom-blog> -->
 
