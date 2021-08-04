@@ -1,0 +1,16 @@
+<form [formGroup]="signup" (ngSubmit)="onSubmit(signup.value)">
+  <div class="form-group">
+    <label for="fullname">Fullname</label>
+    <input type="text" formControlName="fullname" />
+    <div  *ngIf="signup.get('fullname')?.getError('maxlength')">
+      <span class="ng-invalid error">Fulllname cannot exceed 20 chars</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" formControlName="email" />
+  </div>
+  {{signup.invalid}}
+<button [disabled]="signup.invalid">submit</button>
+  {{signup.value | json}}
+</form>

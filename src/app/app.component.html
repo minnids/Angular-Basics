@@ -1,8 +1,11 @@
-<router-outlet></router-outlet>
 <h1>Hello World</h1>
-<a routerLink="/news" routerLinkActive="active">News</a>
-<a routerLink="/news/sports" routerLinkActive="active">Sports</a>
-<p>{{title}}</p>
+<div class="nav">
+  <a routerLink="/news" routerLinkActive="active" >News</a>
+<a routerLink="/news/sports" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Sports</a>
+<a routerLink="/signup" routerLinkActive="active">Signup</a>
+<a routerLink="/signup-react" routerLinkActive="active">signup-react</a>
+</div>
+<!-- <p>{{title}}</p>
 <app-hand-bones></app-hand-bones>
 <website-blog></website-blog>
 <custom-button (getData)="handleGetData($event)" (handleClickData)="handleClickData($event)">
@@ -17,5 +20,8 @@
 <ng-template #header>
   <h1>Template header</h1>
   <img src="https://miro.medium.com/max/3492/1*fKb9TdxSYjVzWindUWaGUg.png" width="200" alt="">
-</ng-template>
+</ng-template> -->
+
+<router-outlet></router-outlet>
+
 

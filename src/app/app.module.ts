@@ -8,19 +8,26 @@ import { HandBonesModule } from './hand-bones/hand-bones.module';
 import { SharedModule } from './shared/shared.module';
 import { NewsCardComponent } from './news-card/news-card.component';
 import { NewsSportsComponent } from './news-sports/news-sports.component';
+import { SignupComponent } from './signup/signup.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SignupReactiveComponent } from './signup-reactive/signup-reactive.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogComponent,
     NewsCardComponent,
-    NewsSportsComponent
+    NewsSportsComponent,
+    SignupComponent,
+    SignupReactiveComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HandBonesModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
