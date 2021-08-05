@@ -5,6 +5,32 @@
 <a routerLink="/signup" routerLinkActive="active">Signup</a>
 <a routerLink="/signup-react" routerLinkActive="active">signup-react</a>
 </div>
+
+<p>{{ 'Custom blog' | uppercase}}</p>
+
+<h2>{{random | number:'1.1-2'}}</h2>
+
+<h2>{{currentDate | date:'longDate'}}</h2>
+
+<div *ngIf="showDiv else nodata">
+  <h1>Structual Direcitves</h1>
+</div>
+
+<ng-template #nodata>
+  <h1>No Data Available</h1>
+</ng-template>
+
+<div *ngFor="let number of randowArra;let i = index">
+  <h1>{{number }} - {{i}}</h1>
+</div>
+
+<div [ngClass]="{'active':showDiv,'hide':!showDiv}">
+    Attribute Directive
+</div>
+<p *ngFor="let post of data">
+  {{ post.body }}
+</p>
+
 <router-outlet></router-outlet>
 <!-- <p>{{title}}</p>
 <app-hand-bones></app-hand-bones>

@@ -11,7 +11,7 @@ import { NewsSportsComponent } from './news-sports/news-sports.component';
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SignupReactiveComponent } from './signup-reactive/signup-reactive.component';
-
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +27,8 @@ import { SignupReactiveComponent } from './signup-reactive/signup-reactive.compo
     HandBonesModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
